@@ -1,0 +1,13 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+body{
+  @apply bg-cod-gray;
+}
+
+html, body{
+  font-family: 'Inter'
+}
