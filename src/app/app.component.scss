@@ -1,12 +1,15 @@
 .main-panel{
-  @apply h-full m-24;
+  @apply h-[100vh] m-6 max-md:mt-4 md:m-24;
 }
 .about-me-panel{
-  @apply float-left;
+  @apply lg:fixed lg:float-left lg:w-[40%];
 }
 .content-panel{
-  @apply h-[100dvh] w-[40rem] float-right overflow-y-scroll;
+  @apply h-[100vh] lg:float-right lg:w-1/2;
 }
 .section-header{
-  @apply text-xl text-jupiter;
+  @apply text-md text-jupiter inline-flex;
+}
+.divider-line{
+  @apply w-48 h-[2px] my-10 bg-rosy-brown block justify-center m-auto;
 }
