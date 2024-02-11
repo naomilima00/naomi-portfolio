@@ -1,0 +1,15 @@
+:host {
+  display: block;
+}
+
+.introduction-panel{
+  @apply text-jupiter w-96;
+}
+
+.about-me{
+  @apply mt-6;
+}
+
+.content-panel{
+  @apply float-right;
+}
