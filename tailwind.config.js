@@ -13,7 +13,9 @@ module.exports = {
       'cod-gray': '#2A2F32',
       'jupiter': '#E1E1E1',
       'rosy-brown': '#AC8887',
-      'black': '#000000'
+      'arsenic': '#3F4346',
+      'black': '#000000',
+      'white': '#ffffff'
     },
     fontSize:{
       sm: ['16px', '24px'],
