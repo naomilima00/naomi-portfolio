@@ -1,3 +1,12 @@
-.test{
-  @apply text-lg text-jupiter;
+.main-panel{
+  @apply h-full m-24;
+}
+.about-me-panel{
+  @apply float-left;
+}
+.content-panel{
+  @apply h-[100dvh] w-[40rem] float-right overflow-y-scroll;
+}
+.section-header{
+  @apply text-xl text-jupiter;
 }
