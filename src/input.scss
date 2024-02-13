@@ -4,6 +4,18 @@
 
 @import "tailwindcss/utilities";
 
+:root{
+  --rosy-brown: #AC8887;
+  --cod-gray: #2A2F32;
+  --jupiter: #E1E1E1;
+  --arsenic: #3F4346;
+}
+
+html{
+  scrollbar-width: thin;
+  scrollbar-color: var(--rosy-brown) var(--cod-gray);
+}
+
 body{
   @apply bg-cod-gray;
 }
