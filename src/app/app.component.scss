@@ -1,14 +1,14 @@
 // Main Layout
 .main-panel{
-  @apply h-[100vh] mt-24 m-8 lg:m-8 lg:mt-24 xl:m-24;
+  @apply h-[100vh] mt-24 m-8 lg:m-8 lg:mt-24 xl:m-24 2xl:m-40 3xl:mx-[20rem];
 }
 
 .about-me-panel{
-  @apply lg:fixed lg:float-left lg:w-[40%];
+  @apply lg:fixed lg:float-left lg:w-[40%] 3xl:w-[30%];
 }
 
 .content-panel{
-  @apply h-[100vh] lg:float-right lg:w-1/2;
+  @apply h-[100vh] lg:float-right lg:w-1/2 3xl:w-[50%];
   .divider-line{
     @apply w-48 h-[2px] my-10 bg-rosy-brown block justify-center m-auto;
   }
@@ -24,7 +24,7 @@
 
 // Global Cards
 .card-container{
-  @apply max-w-full lg:max-w-2xl bg-arsenic rounded-xl;
+  @apply max-w-full lg:max-w-2xl bg-arsenic rounded-xl 2xl:max-w-4xl;
   &:hover{
     @apply outline outline-2 outline-rosy-brown;
   }
