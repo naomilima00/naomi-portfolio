@@ -9,11 +9,14 @@
   --cod-gray: #2A2F32;
   --jupiter: #E1E1E1;
   --arsenic: #3F4346;
+  --light-pink: #DDCFCF;
 }
 
 html{
   scrollbar-width: thin;
   scrollbar-color: var(--rosy-brown) var(--cod-gray);
+  scroll-behavior: smooth;
+  scroll-margin-top: 100px;
 }
 
 body{

@@ -1,3 +1,5 @@
+@import '../app.component.scss';
+
 :host {
   display: block;
 }
@@ -17,6 +19,28 @@
   @apply float-right;
 }
 
-button{
+.resume-btn{
+  @extend .hover-transition;
   @apply w-40 h-10 bg-rosy-brown rounded-md text-black;
+  &:hover{
+    @apply bg-light-pink;
+  }
+}
+
+.social-links{
+  @apply flex mt-6 gap-3;
+  .linkedin-link{
+    @extend .hover-transition--icon;
+    @apply w-8 h-8 bg-no-repeat bg-center bg-[url('../../assets/icons/icon-linkedin.svg')];
+    &:hover{
+      @apply bg-[url('../../assets/icons/icon-linkedin-pink.svg')];
+    }
+  }
+  .instagram-link{
+    @extend .hover-transition--icon;
+    @apply w-8 h-8 bg-no-repeat bg-center bg-[url('../../assets/icons/icon-instagram.svg')];
+    &:hover{
+      @apply bg-[url('../../assets/icons/icon-instagram-pink.svg')];;
+    }
+  }
 }

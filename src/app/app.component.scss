@@ -1,22 +1,25 @@
 // Main Layout
-.main-panel{
-  @apply h-[100vh] mt-24 m-8 lg:m-8 lg:mt-24 xl:m-24 2xl:m-40 3xl:mx-[20rem];
+.full-page{
+  @apply min-h-screen max-h-screen pt-14 mx-6 md:mx-14;
+}
+.page-contents{
+  @apply max-w-screen-2xl flex-col lg:flex-row flex justify-between gap-20 mx-auto;
 }
 
 .about-me-panel{
-  @apply lg:fixed lg:float-left lg:w-[40%] 3xl:w-[30%];
+  @apply lg:float-left lg:w-1/2 xl:w-[40%];
 }
 
 .content-panel{
-  @apply h-[100vh] lg:float-right lg:w-1/2 3xl:w-[50%];
+  @apply lg:float-right lg:w-1/2 xl:w-[60%];
   .divider-line{
-    @apply w-48 h-[2px] my-10 bg-rosy-brown block justify-center m-auto;
+    @apply w-48 h-[2px] mt-10 mb-2 bg-rosy-brown block justify-center m-auto;
   }
 }
 
-// Global Sections
+// Sections
 .section-header{
-  @apply text-md text-jupiter inline-flex mb-5;
+  @apply text-md text-jupiter inline-flex m-5 ml-0;
 }
 .section-content{
   @apply flex flex-col gap-8;
@@ -24,20 +27,21 @@
 
 // Global Cards
 .card-container{
-  @apply max-w-full lg:max-w-2xl bg-arsenic rounded-xl 2xl:max-w-4xl;
+  @extend .hover-transition--outline;
+  @apply max-w-full bg-arsenic rounded-xl outline-none outline-offset-0 outline-0;
   &:hover{
     @apply outline outline-2 outline-rosy-brown;
   }
 }
 
 .card-content{
-  @apply text-white p-8;
+  @apply text-white p-6 lg:p-8;
 }
 
 .card-header{
-  @apply flex text-base;
-  & p:last-child{
-    @apply ml-auto text-end;
+  @apply flex text-base justify-between;
+  & :last-child{
+    @apply text-end;
   }
 }
 
@@ -49,6 +53,28 @@
 .card-description{
   @apply mt-5;
   ul{
-    @apply ml-4 list-disc;
+    @apply ml-4 list-disc leading-6;
+  }
+}
+
+.scroll-to{
+  @apply h-1;
+}
+
+.navi-link{
+  @extend .hover-transition;
+  @apply text-rosy-brown;
+  &:hover{
+    @apply text-light-pink;
+  }
+}
+
+.hover-transition{
+  @apply transition ease-out duration-700;
+  &--icon{
+    @apply transition-background duration-1000;
+  }
+  &--outline{
+    @apply transition-outline duration-1000 ease-out;
   }
 }
