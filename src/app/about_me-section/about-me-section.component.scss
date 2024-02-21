@@ -1,9 +1,5 @@
 @import '../app.component.scss';
 
-:host {
-  display: block;
-}
-
 .introduction-panel{
   @apply text-jupiter lg:max-w-[30rem] lg:mr-8 my-10;
 }

@@ -1,3 +1,9 @@
-:host {
-  display: block;
+.card-content{
+  @apply inline-flex items-center gap-9;
+}
+.list-skills{
+  @apply justify-start inline-flex gap-2 flex-wrap align-baseline;
+}
+.skill-pill{
+  @apply whitespace-nowrap leading-none h-8 w-fit p-2 bg-arsenic outline outline-1 outline-rosy-brown rounded-md content-center;
 }

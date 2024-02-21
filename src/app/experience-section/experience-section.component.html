@@ -6,40 +6,19 @@
 </section>
 
 <section class="section-content">
-  <div class="card-container">
+  <div class="card-container" *ngFor="let experienceInfo of experienceInfo; index as i">
     <div class="card-content">
       <div class="card-header">
-        <p>Software Developer II</p>
-        <p>World Fuel Services</p>
+        <p>{{experienceInfo.title}}</p>
+        <p>{{experienceInfo.company}}</p>
       </div>
       <div class="card-subheader">
-        <p>June 2022 - Present</p>
-        <p>Miami, FL</p>
+        <p>{{experienceInfo.duration}}</p>
+        <p>{{experienceInfo.companyLocation}}</p>
       </div>
       <div class="card-description">
-        <ul>
-          <li>Developing and maintaining a robust customer-facing website using Angular and TypeScript to create user friendly and appealing user interface</li>
-          <li>Contributing to an agile development environment, actively participating the software development lifecycle</li>
-          <li>Led the adoption of different branching practices that have significantly reduced introduced bugs and lead time</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <div class="card-container">
-    <div class="card-content">
-      <div class="card-header">
-        <p>Software Developer Intern</p>
-        <p>World Fuel Services</p>
-      </div>
-      <div class="card-subheader">
-        <p>June 2021 - August 2021</p>
-        <p>Miami, FL</p>
-      </div>
-      <div class="card-description">
-        <ul>
-          <li>Assisted a team of business analysts and software developers throughout their sprints; creating documentation, tickets, and assisted on the development of new API functionalities</li>
-          <li>Implemented a business metrics dashboard using Tableau and Snowflake to have a high-level overview of the performance and success of the company's performance and APIs</li>
+        <ul *ngFor="let experienceDescription of experienceInfo.description">
+          <li>{{experienceDescription}}</li>
         </ul>
       </div>
     </div>
