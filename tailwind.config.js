@@ -14,6 +14,7 @@ module.exports = {
       'cod-gray': '#2A2F32',
       'jupiter': '#E1E1E1',
       'rosy-brown': '#AC8887',
+      'light-pink': '#DDCFCF',
       'arsenic': '#3F4346',
       'black': '#000000',
       'white': '#ffffff'
@@ -24,6 +25,12 @@ module.exports = {
       md: ['24px', '32px'],
       lg: ['36px', '44px'],
       xl: ['48px', '56px'],
+    },
+    extend: {
+      transitionProperty: {
+        'outline': 'outline-color',
+        'background': 'background-image'
+      }
     }
   },
   plugins: [],

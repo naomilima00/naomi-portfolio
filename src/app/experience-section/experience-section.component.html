@@ -1,42 +1,24 @@
+<div class="scroll-to" id="experience-section"></div>
+
 <section class="section-header">
   <img width="20" height="24" src="../../assets/images/sparkle.svg"/>
   <h2 class="ml-2">Experience</h2>
 </section>
 
 <section class="section-content">
-  <div class="card-container">
+  <div class="card-container" *ngFor="let experienceInfo of experienceInfo; index as i">
     <div class="card-content">
       <div class="card-header">
-        <p>Software Developer II</p>
-        <p>World Fuel Services</p>
+        <p>{{experienceInfo.title}}</p>
+        <p>{{experienceInfo.company}}</p>
       </div>
       <div class="card-subheader">
-        <p>June 2022 - Present</p>
-        <p>Miami, FL</p>
+        <p>{{experienceInfo.duration}}</p>
+        <p>{{experienceInfo.companyLocation}}</p>
       </div>
       <div class="card-description">
-        <ul>
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pulvinar diam et nunc gravida dictum. Maecenas volutpat velit id justo convallis maximus. Phasellus venenatis euismod ultrices. Maecenas posuere nunc odio</li>
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pulvinar diam et nunc gravida dictum. Maecenas volutpat velit id justo convallis maximus.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <div class="card-container">
-    <div class="card-content">
-      <div class="card-header">
-        <p>Software Developer Intern</p>
-        <p>World Fuel Services</p>
-      </div>
-      <div class="card-subheader">
-        <p>June 2021 - August 2021</p>
-        <p>Miami, FL</p>
-      </div>
-      <div class="card-description">
-        <ul>
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pulvinar diam et nunc gravida dictum. Maecenas volutpat velit id justo convallis maximus. Phasellus venenatis euismod ultrices. Maecenas posuere nunc odio</li>
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pulvinar diam et nunc gravida dictum. Maecenas volutpat velit id justo convallis maximus.</li>
+        <ul *ngFor="let experienceDescription of experienceInfo.description">
+          <li>{{experienceDescription}}</li>
         </ul>
       </div>
     </div>
