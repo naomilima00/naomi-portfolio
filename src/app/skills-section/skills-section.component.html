@@ -7,10 +7,10 @@
 <section class="section-content" id="technical-skills">
   <div class="card-container">
     <div class="card-content">
-      <img src="assets/icons/icon-code.svg">
+      <div class="img-container"><div id="code-icon"></div></div>
       <div class="list-skills">
-        <div *ngFor="let items of technicalSkills; index as i;" class="skill-pill" id="pill-{{technicalSkills[i]}}">
-          <p>{{technicalSkills[i]}}</p>
+        <div *ngFor="let technicalSkills of technicalSkills; index as i;" class="skill-pill" id="pill-{{technicalSkills}}">
+          <p>{{technicalSkills}}</p>
         </div>
       </div>
     </div>
@@ -18,10 +18,10 @@
 
   <div class="card-container" id="design-skills">
     <div class="card-content">
-      <img src="assets/icons/icon-design.svg">
+      <div class="img-container"><div id="design-icon"></div></div>
       <div class="list-skills">
-        <div *ngFor="let items of designSkills; index as i;" class="skill-pill" id="pill-{{designSkills[i]}}">
-          <p>{{designSkills[i]}}</p>
+        <div *ngFor="let designSkills of designSkills; index as i;" class="skill-pill" id="pill-{{designSkills}}">
+          <p>{{designSkills}}</p>
         </div>
       </div>
     </div>
@@ -29,10 +29,10 @@
 
   <div class="card-container" id="productivity-skills">
     <div class="card-content">
-      <img src="assets/icons/icon-productivity.svg">
+      <div class="img-container"><div id="productivity-icon"></div></div>
       <div class="list-skills">
-        <div *ngFor="let items of productivitySkills; index as i;" class="skill-pill" id="pill-{{productivitySkills[i]}}">
-          <p>{{productivitySkills[i]}}</p>
+        <div *ngFor="let productivitySkills of productivitySkills; index as i;" class="skill-pill" id="pill-{{productivitySkills}}">
+          <p>{{productivitySkills}}</p>
         </div>
       </div>
     </div>
