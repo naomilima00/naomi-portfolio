@@ -15,16 +15,16 @@
 }
 
 #code-icon{
-  @extend .hover-transition;
-  @apply w-16 h-16 bg-no-repeat bg-center bg-[url('../../assets/icons/icon-code.svg')];
+  @extend .hover-transition--icon;
+  @apply w-16 h-16 bg-no-repeat bg-center bg-contain bg-[url('../../assets/icons/icon-code.svg')];
 }
 #design-icon{
-  @extend .hover-transition;
-  @apply w-16 h-16 bg-no-repeat bg-center bg-[url('../../assets/icons/icon-design.svg')];
+  @extend .hover-transition--icon;
+  @apply w-16 h-16 bg-no-repeat bg-center bg-contain bg-[url('../../assets/icons/icon-design.svg')];
 }
 #productivity-icon{
-  @extend .hover-transition;
-  @apply w-16 h-16 bg-no-repeat bg-center bg-[url('../../assets/icons/icon-productivity.svg')];
+  @extend .hover-transition--icon;
+  @apply w-16 h-16 bg-no-repeat bg-center bg-contain bg-[url('../../assets/icons/icon-productivity.svg')];
 }
 
 .card-container:hover{

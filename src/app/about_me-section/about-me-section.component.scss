@@ -24,7 +24,7 @@
 }
 
 .media-icon{
-    @apply w-8 h-8 bg-no-repeat bg-center;
+    @apply w-8 h-8 bg-no-repeat bg-contain bg-center;
 }
 
 .social-links{
