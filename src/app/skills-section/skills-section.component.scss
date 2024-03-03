@@ -29,12 +29,12 @@
 
 .card-container:hover{
   #code-icon{
-    @apply bg-[url('../../assets/icons/icon-code-pink.svg')];
+    @apply bg-[url('../../assets/icons/hover-icons/icon-code-pink.svg')];
   }
   #design-icon{
-    @apply bg-[url('../../assets/icons/icon-design-pink.svg')];
+    @apply bg-[url('../../assets/icons/hover-icons/icon-design-pink.svg')];
   }
   #productivity-icon{
-    @apply bg-[url('../../assets/icons/icon-productivity-pink.svg')];
+    @apply bg-[url('../../assets/icons/hover-icons/icon-productivity-pink.svg')];
   }
 }

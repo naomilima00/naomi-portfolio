@@ -34,7 +34,7 @@
     @extend .media-icon;
     @apply bg-[url('../../assets/icons/icon-linkedin.svg')];
     &:hover{
-      @apply bg-[url('../../assets/icons/icon-linkedin-pink.svg')];
+      @apply bg-[url('../../assets/icons/hover-icons/icon-linkedin-pink.svg')];
     }
   }
   #instagram-link{
@@ -42,7 +42,7 @@
     @extend .media-icon;
     @apply bg-[url('../../assets/icons/icon-instagram.svg')];
     &:hover{
-      @apply bg-[url('../../assets/icons/icon-instagram-pink.svg')];;
+      @apply bg-[url('../../assets/icons/hover-icons/icon-instagram-pink.svg')];;
     }
   }
   #github-link{
@@ -50,7 +50,7 @@
     @extend .media-icon;
     @apply bg-[url('../../assets/icons/icon-github.svg')];
     &:hover{
-      @apply bg-[url('../../assets/icons/icon-github-pink.svg')];
+      @apply bg-[url('../../assets/icons/hover-icons/icon-github-pink.svg')];
     }
   }
   #email-link{
@@ -58,7 +58,7 @@
     @extend .media-icon;
     @apply w-9 bg-[url('../../assets/icons/icon-email.svg')];
     &:hover{
-      @apply bg-[url('../../assets/icons/icon-email-pink.svg')];
+      @apply bg-[url('../../assets/icons/hover-icons/icon-email-pink.svg')];
     }
   }
 }
