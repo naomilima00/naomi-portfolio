@@ -29,7 +29,7 @@ export class ExperienceSectionComponent {
     duration: 'June 2021 - August 2021',
     companyLocation: 'Miami, FL',
     description: [
-      'Assisted a team of business analysts and software developers throughout their sprints; creating documentation, tickets, and assisted on the development of new API functionalities',
+      'Assisted a team of business analysts and software developers throughout multiple sprints by creating documentation, tickets, and assisted on the development of new API functionalities',
       'Implemented a business metrics dashboard using Tableau and Snowflake to have a high-level overview of the performance and success of the company\'s performance and APIs'
     ]
   },

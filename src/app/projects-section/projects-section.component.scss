@@ -1,17 +1,20 @@
 @import '../app.component.scss';
 
-.link-project{
-  @extend .hover-transition;
-  @apply place-items-center text-sm inline-flex max-md:hidden justify-end text-rosy-brown cursor-pointer;
-  .external-link-icon{
-    @extend .hover-transition--icon;
-    @apply ml-2 mb-1 w-5 h-6 bg-no-repeat bg-center bg-[url('../../assets/icons/icon-external-link.svg')];
-  }
-  &:hover{
+.card-container:hover{
+  .link-project{
+    @extend .hover-transition;
     @apply text-light-pink;
     .external-link-icon{
+      @extend .hover-transition--icon;
       @apply bg-[url('../../assets/icons/icon-external-link-pink.svg')];
     }
+  }
+}
+
+.link-project{
+  @apply place-items-center text-sm inline-flex max-md:hidden justify-end text-rosy-brown cursor-pointer;
+  .external-link-icon{
+    @apply ml-2 mb-1 w-5 h-6 bg-no-repeat bg-center bg-[url('../../assets/icons/icon-external-link.svg')];
   }
   &--mobile{
     @extend .link-project;

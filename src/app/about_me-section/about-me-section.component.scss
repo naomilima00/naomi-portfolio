@@ -23,20 +23,42 @@
   }
 }
 
+.media-icon{
+    @apply w-8 h-8 bg-no-repeat bg-center;
+}
+
 .social-links{
   @apply flex mt-6 gap-3;
-  .linkedin-link{
+  #linkedin-link{
     @extend .hover-transition--icon;
-    @apply w-8 h-8 bg-no-repeat bg-center bg-[url('../../assets/icons/icon-linkedin.svg')];
+    @extend .media-icon;
+    @apply bg-[url('../../assets/icons/icon-linkedin.svg')];
     &:hover{
       @apply bg-[url('../../assets/icons/icon-linkedin-pink.svg')];
     }
   }
-  .instagram-link{
+  #instagram-link{
     @extend .hover-transition--icon;
-    @apply w-8 h-8 bg-no-repeat bg-center bg-[url('../../assets/icons/icon-instagram.svg')];
+    @extend .media-icon;
+    @apply bg-[url('../../assets/icons/icon-instagram.svg')];
     &:hover{
       @apply bg-[url('../../assets/icons/icon-instagram-pink.svg')];;
+    }
+  }
+  #github-link{
+    @extend .hover-transition--icon;
+    @extend .media-icon;
+    @apply bg-[url('../../assets/icons/icon-github.svg')];
+    &:hover{
+      @apply bg-[url('../../assets/icons/icon-github-pink.svg')];
+    }
+  }
+  #email-link{
+    @extend .hover-transition--icon;
+    @extend .media-icon;
+    @apply w-9 bg-[url('../../assets/icons/icon-email.svg')];
+    &:hover{
+      @apply bg-[url('../../assets/icons/icon-email-pink.svg')];
     }
   }
 }

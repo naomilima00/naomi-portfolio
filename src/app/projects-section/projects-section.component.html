@@ -5,42 +5,25 @@
   <h2 class="ml-2">Projects</h2>
 </div>
 <section class="section-content">
-  <a href="" id="link-project-1">
-    <div class="card-container">
-      <div class="card-content">
-        <div class="card-header">
-          <p>Project Name</p>
+  <ng-container *ngFor="let project of projectsInformation; index as i">
+    <a href="" id="link-project-{{i}}">
+      <div class="card-container">
+        <div class="card-content">
+          <div class="card-header">
+            <p>{{project.projectName}}</p>
+            <a>
+              <p class="link-project">Link to Project<a class="external-link-icon"></a></p>
+            </a>
+          </div>
+          <div class="card-description">
+            <p>{{project.projectDescription}}</p>
+          </div>
           <a>
-            <p class="link-project">Link to Project<a class="external-link-icon"></a></p>
+            <p class="link-project--mobile">Link to Project <a class="external-link-icon"></a></p>
           </a>
         </div>
-        <div class="card-description">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pulvinar diam et nunc gravida dictum. Maecenas volutpat velit id justo convallis maximus. Phasellus venenatis euismod ultrices. Maecenas posuere nunc odio</p>
-        </div>
-        <a>
-          <p class="link-project--mobile">Link to Project <a class="external-link-icon"></a></p>
-        </a>
       </div>
-    </div>
-  </a>
-
-  <a href="" id="link-project-2">
-    <div class="card-container">
-      <div class="card-content">
-        <div class="card-header">
-          <p>Project Name</p>
-          <a>
-            <p class="link-project">Link to Project<a class="external-link-icon"></a></p>
-          </a>
-        </div>
-        <div class="card-description">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pulvinar diam et nunc gravida dictum. Maecenas volutpat velit id justo convallis maximus. Phasellus venenatis euismod ultrices. Maecenas posuere nunc odio</p>
-        </div>
-        <a>
-          <p class="link-project--mobile">Link to Project <a class="external-link-icon"></a></p>
-        </a>
-      </div>
-    </div>
-  </a>
+    </a>
+  </ng-container>
 </section>
 

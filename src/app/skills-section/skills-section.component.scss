@@ -1,9 +1,40 @@
+@import '../app.component.scss';
+
 .card-content{
   @apply inline-flex items-center gap-9;
 }
 .list-skills{
-  @apply justify-start inline-flex gap-2 flex-wrap align-baseline;
+  @apply justify-start inline-flex gap-3 flex-wrap align-baseline;
 }
 .skill-pill{
-  @apply whitespace-nowrap leading-none h-8 w-fit p-2 bg-arsenic outline outline-1 outline-rosy-brown rounded-md content-center;
+  @apply whitespace-nowrap leading-none w-fit p-3 bg-arsenic outline outline-1 outline-rosy-brown rounded-md content-center;
+}
+
+.img-container{
+  @apply w-20 h-20 basis-0 flex items-center;
+}
+
+#code-icon{
+  @extend .hover-transition;
+  @apply w-16 h-16 bg-no-repeat bg-center bg-[url('../../assets/icons/icon-code.svg')];
+}
+#design-icon{
+  @extend .hover-transition;
+  @apply w-16 h-16 bg-no-repeat bg-center bg-[url('../../assets/icons/icon-design.svg')];
+}
+#productivity-icon{
+  @extend .hover-transition;
+  @apply w-16 h-16 bg-no-repeat bg-center bg-[url('../../assets/icons/icon-productivity.svg')];
+}
+
+.card-container:hover{
+  #code-icon{
+    @apply bg-[url('../../assets/icons/icon-code-pink.svg')];
+  }
+  #design-icon{
+    @apply bg-[url('../../assets/icons/icon-design-pink.svg')];
+  }
+  #productivity-icon{
+    @apply bg-[url('../../assets/icons/icon-productivity-pink.svg')];
+  }
 }
