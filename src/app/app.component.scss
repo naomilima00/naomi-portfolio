@@ -28,9 +28,9 @@
 // Global Cards
 .card-container{
   @extend .hover-transition--outline;
-  @apply max-w-full bg-arsenic rounded-xl outline-none outline-offset-0 outline-0;
+  @apply max-w-full bg-arsenic rounded-xl outline outline-offset-0 outline-none;
   &:hover{
-    @apply outline outline-2 outline-rosy-brown;
+    @apply outline outline-offset-0 outline-2 outline-rosy-brown;
   }
 }
 
@@ -72,9 +72,9 @@
 .hover-transition{
   @apply transition ease-out duration-700;
   &--icon{
-    @apply transition-background duration-700;
+    @apply transition-background ease-out duration-700;
   }
   &--outline{
-    @apply transition-outline duration-700 ease-out;
+    @apply transition-outline ease-out duration-700;
   }
 }

@@ -1,7 +1,7 @@
 @import '../app.component.scss';
 
 .card-content{
-  @apply inline-flex items-center gap-9;
+  @apply inline-flex items-center w-full gap-9 flex-col md:flex-row;
 }
 .list-skills{
   @apply justify-start inline-flex gap-3 flex-wrap align-baseline;
@@ -11,7 +11,7 @@
 }
 
 .img-container{
-  @apply w-20 h-20 basis-0 flex items-center;
+  @apply w-20 h-20 basis-0 flex items-center justify-center;
 }
 
 #code-icon{

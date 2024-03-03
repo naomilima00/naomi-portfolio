@@ -28,7 +28,7 @@ module.exports = {
     },
     extend: {
       transitionProperty: {
-        'outline': 'outline-color',
+        'outline': 'outline, outline-color, outline-style, outline-width, outline-offset',
         'background': 'background-image'
       }
     }

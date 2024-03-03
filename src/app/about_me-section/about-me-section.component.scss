@@ -1,7 +1,7 @@
 @import '../app.component.scss';
 
 .introduction-panel{
-  @apply text-jupiter lg:max-w-[30rem] lg:mr-8 my-10;
+  @apply text-jupiter my-10 lg:max-w-[30rem] lg:mr-8 lg:fixed;
 }
 
 .about-me{
